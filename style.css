@@ -2,21 +2,25 @@ header {
     display: grid;
     gap: 1rem;
     padding: 1rem;
+    border: 1px solid black;
 }
 .logo img {
   width: 100%;
   height: auto;
   display: block;
+  border: 1px solid black;
 }
 .search {
   display: flex;
   justify-content: start;
   gap : 0.5rem;
+  border: 1px solid black;
 }
 .search input {
   padding: 0.5rem;
-  border: 1px solid black;
   border-radius: 20px;
+  border: 1px solid black;
+
 }
 .search button {
   padding: 0.5rem 1rem;
@@ -26,20 +30,13 @@ header {
   border-radius: 20px;
   cursor: pointer;
 }
-.favorite {
-  display: flex;
-  justify-content: start;
-  gap: 1rem;
-}
-.cart {
-  display: flex;
-  justify-content: start;
-  gap: 1rem;
-}
 .cart img,
 .favorite img {
+  display: flex;
+  justify-content: start;
   width: 24px;
   height: auto;
+  border: 1px  black solid;
 }
 .navbar ul {
   display: flex;
@@ -48,6 +45,7 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
+  border: 1px solid black;
 }
 .navbar ul li a {
   text-decoration: none;
