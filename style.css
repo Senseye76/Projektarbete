@@ -88,6 +88,7 @@
 .produkt-kort > div:first-child {
   position: relative;
 }
+/* Nyheter icon på produkt bilden */
 .newstext {
   position: absolute;
   top: 10px;
@@ -99,8 +100,6 @@
   border-width: 6px;
   padding: 2px 6px;
   font-size: 13px;
-
-  
 }
 .produkt-kort img {
   display: block;
@@ -126,16 +125,22 @@
 }
 .produkt-pris {
   display: flex;
-  margin-right: 100px;
+  /* margin-right: 100px; */
   font-weight: bold;
 }
+/* Tar bara bort ramen runt heart iconen i bilden  */
+.produkt-kort .solidheart {
+  border: none !important;
+}
+/* Selector för heart iconen på första bilden */
 .solidheart {
   position: absolute;
   width: 25px;
-  bottom: 30px;
+  bottom: 45px;
   left: 90%;
-  max-width: 25px;
+  max-width: 30px;
   z-index: 10;
+  border: none;
 }
 @media (min-width: 640px) {
   .header {
