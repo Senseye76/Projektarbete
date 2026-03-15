@@ -1,101 +1,236 @@
-header {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
-    border: 1px solid black;
+/* Webbsidans style */
+.header {
+  display: grid;
+  margin: 10px;
 }
-.logo img {
+.header img {
+    width: 100%;
+    height: auto;
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.search-row {
+  display: flex;
+}
+.search input {
+  flex: 1;
+  min-width: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+.search button {
+ border-radius: 10px;
+ color: white;
+ background-color: rgb(77, 48, 48);
+ padding: 5px;
+ width: 50px;
+}
+.search button:hover {
+  background-color: #db7171;
+}
+.icons img {
+  width: 25px;
+  height: 25px;
+  margin-left: 8px;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar ul a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.2s ease;
+}
+.navbar ul a:hover {
+  color: #db7171;
+}
+.navbar ul li {
+  padding: 0 12px;
+  border-right: 1px solid black;
+}
+.navbar ul li:last-child {
+  border-right: none;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 8px;
+}
+.hero-img img {
   width: 100%;
   height: auto;
   display: block;
   border: 1px solid black;
 }
-.search {
-  display: flex;
-  justify-content: start;
-  gap : 0.5rem;
+.hero-text {
+  display: block;
+  text-align: center;
+}
+.produkter {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 10px;
+}
+.produkt-kort img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto; 
   border: 1px solid black;
 }
-.search input {
-  padding: 0.5rem;
-  border-radius: 20px;
-  border: 1px solid black;
+.produkt-namn {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 120px;
 
 }
-.search button {
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: #533434;
-  color: white;
-  border-radius: 20px;
-  cursor: pointer;
+.produkt-namn h3 {
+   margin: 0px; 
+   font-size: 16px; 
 }
-.cart img,
-.favorite img {
+.levis-text {
   display: flex;
-  justify-content: start;
-  width: 24px;
-  height: auto;
-  border: 1px  black solid;
+  font-size: 16px;
 }
-.navbar ul {
+.produkt-pris {
   display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border: 1px solid black;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: #333;
+  margin-right: 70px;
   font-weight: bold;
 }
+.solidheart {
+  position: absolute;
+  width: 25px;
+  max-width: 25px;
+
+  z-index: 10;
+}
 @media (min-width: 640px) {
-  header {
-    grid-template-columns: 1fr;
-  }
-  .logo {
-    justify-self: start;
-  } 
-  .search {
-    align-items: flex-start;
-    justify-self: start;
-  } 
-  .favorite {
-    justify-self: end;
-  }
-  .cart {
-    justify-self: end;
-  }
-  .navbar ul {
-    flex-direction: row;
-    justify-content: start;
-  }
-}  
-@media (min-width: 1024px) {
-  header {
-    grid-template-columns: auto auto auto auto;
-    grid-template-areas: "logo" "search" "favorite" "cart"
-                      "navbar" "navbar" "navbar" "navbar";
+  .header {
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
   }
-  .logo {
-    justify-self: start;
-  } 
-  .search {
-    justify-self: auto;
-  } 
-  .favorite {
-    justify-self: auto;
+  .search-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto   */
   }
-  .cart {
-    justify-self: auto;
+  .search {
+      margin-left: 20px;
+    }
+  .icons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
   }
   .navbar ul {
-    flex-direction: row;
-    justify-content: flex-start;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
   }
+.hero-img {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  }
+.hero-text {
+  display: block;
 }
-   
+.section .hero {
+  box-shadow: black;
+}
+.hero img {
+  display: flex;
+  border: 1px solid black;
+  margin: 10px;
+  width: 90%;
+}
+.produkter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  }
+.produkt-kort img {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  margin: 10px;
+}
+.produkt-namn {
+  display: flex;
+  align-items: center;
+}
+.produkt-namn h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.produkt-pris {
+  margin: 0;
+  font-weight: bold;
+}
+.levis-text {
+  display: flex;
+  font-size: 16px;
+}
+}
+ @media (min-width: 1024px) {
+  .header-logo {
+    width: 100%;
+    height: auto;
+  }
+  .hero {
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   gap: 2rem;
+  }
+  .hero-img,
+  .hero-text {
+    flex: 1;
+  }
+  .produkter {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .produkt-kort img {
+   width: 100%;
+   height: auto;
+   border: 1px solid black;
+   margin: 10px;
+}
+.produkt-namn {
+   display: flex;
+   align-items: center;
+}
+.produkt-namn h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.produkt-pris {
+  margin: 0;
+  font-weight: bold;
+
+}
+.levis-text {
+  display: flex;
+  font-size: 16px;
+}
+}
+/* Produktsidans style */
