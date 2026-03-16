@@ -17,7 +17,6 @@
 }
 .search input {
   flex: 1;
-  min-width: none;
   border-radius: 10px;
   padding: 5px;
 }
@@ -103,25 +102,32 @@
 }
 .produkt-kort img {
   display: block;
-  position: relative;
-  width: 100%;
+  position: relative; 
   height: auto; 
-  border: 1px solid black;
 }
+.produkt-media img:first-child {
+  width: 100%;
+  display: block;
+  border: 1px solid black; 
+}
+ .produkt-media img:nth-child(2) {
+  position: absolute;
+  width: 25px;
+  bottom: 35px;
+  left: 90%;
+  max-width: 30px;
+  z-index: 10;
+ }
+
 .produkt-namn {
   display: flex;
   align-items: center; 
   margin-left: 10px;
-  gap: 120px;
-
+  justify-content: space-between;
 }
 .produkt-namn h3 {
    margin: 0px; 
    font-size: 16px; 
-}
-.levis-text {
-  display: flex;
-  font-size: 16px;
 }
 .produkt-pris {
   display: flex;
@@ -132,16 +138,10 @@
 .produkt-kort .solidheart {
   border: none !important;
 }
-/* Selector för heart iconen på första bilden */
-.solidheart {
-  position: absolute;
-  width: 25px;
-  bottom: 45px;
-  left: 90%;
-  max-width: 30px;
-  z-index: 10;
-  border: none;
+.produkt-media {
+  position: relative;
 }
+
 @media (min-width: 640px) {
   .header {
     display: grid;
@@ -178,9 +178,6 @@
   }
 .hero-text {
   display: block;
-}
-.section .hero {
-  box-shadow: black;
 }
 .hero img {
   display: flex;
