@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svart T-shirt</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/tshirt.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="https://placehold.co/400x100/png?text=Freaky+Fashion" alt="Freaky Fashion" />
+        </div>
+
+        <div class="search-row">
+            <div class="search">
+                <input type="text" placeholder="Sök Produkter..." />
+                <button>Sök</button>
+            </div>
+
+            <div class="icons">
+                <img class="heart" src="images/heart.png" alt="Favorit" />
+                <img class="cart" src="images/shopping-cart.png" alt="Shopping Cart" />
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Nyheter</a></li>
+                <li><a href="#">Bästsäljare</a></li>
+                <li><a href="#">Kvinnor</a></li>
+                <li><a href="#">Män</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <article class="produkt-kort">
+                <div class="produkt-media">
+                    <a href="produkter-detail.html">
+                        <img src="images/short-sleeve-black-t-shirt.jpg" alt="Svart T-shirt">
+                    </a>
+                    <img class="favorit-heart" src="images/heart.png" alt="Favorit heart">
+                </div>
+                <div class="produkt-namn">
+                    <h5>Svart T-shirt</h5>
+                 <div class="produkt-info">
+                    <p class="brand">Levis</p>
+                    <p class="beskrivning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem iste sint odit
+                        repellendus, temporibus natus? Ea sapiente magni sequi incidunt asperiores consectetur fugiat
+                        exercitationem autem, doloremque accusamus iure. Eveniet.</p>
+                     <p class="produkt-pris">199 kr</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="små-iconer">
+                <div class="gratis-frakt">
+                    <img src="images/earth.png" alt="Gratis frakt icon">
+                    <p>Gratis frakt och retur</p>
+                </div>
+                <div class="express-frakt">
+                    <img src="images/plane.png" alt="Express frakt icon">
+                    <p>Expressfrakt</p>
+                </div>
+                <div class="säkrabetalningar">
+                    <img src="images/shield-half.png" alt="Säkerbetalning icon">
+                    <p>Säkra betalningar</p>
+                </div>
+                <div class="nyheter">
+                    <img src="images/smile.png" alt="Liten Nyheter icon">
+                    <p>Nyheter varje dag</p>
+                </div>
+            </article>
+
+        </section>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Shopping
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Vinterjackor</div>
+                </div>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Pufferjackor</div>
+                </div>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Kappa</div>
+                </div>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Trenchcoats</div>
+                </div>
+
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Mina sidor
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Kundtjänst
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">.</div>
+                </div>
+            </div>
+        </div>
+        </section>
+        </section>
+    </main>
+
+    <footer>
+        <small>&copy; Freaky Fashon</small>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    </main>
+</body>
+
+</html>

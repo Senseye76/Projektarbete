@@ -3,43 +3,52 @@
   display: grid;
   margin: 10px;
 }
+
 .header img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
+
 .search {
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 .search-row {
   display: flex;
 }
+
 .search input {
   flex: 1;
   border-radius: 10px;
   padding: 5px;
 }
+
 .search button {
- border-radius: 10px;
- color: white;
- background-color: rgb(77, 48, 48);
- padding: 5px;
- width: 50px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(77, 48, 48);
+  padding: 5px;
+  width: 50px;
 }
+
 .search button:hover {
   background-color: #db7171;
 }
+
 .icons img {
   width: 25px;
   height: 25px;
   margin-left: 8px;
 }
+
 .navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 .navbar ul a {
   color: black;
   text-decoration: none;
@@ -47,16 +56,20 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: color 0.2s ease;
 }
+
 .navbar ul a:hover {
   color: #db7171;
 }
+
 .navbar ul li {
   padding: 0 12px;
   border-right: 1px solid black;
 }
+
 .navbar ul li:last-child {
   border-right: none;
 }
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -65,28 +78,34 @@
   border: 1px solid black;
   padding: 8px;
 }
+
 .hero-img img {
   width: 100%;
   height: auto;
   display: block;
   border: 1px solid black;
 }
+
 .hero-text {
   display: block;
   text-align: center;
 }
+
 .produkter {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
   margin: 10px;
 }
+
 .produkt-kort {
-  margin: 10px; 
+  margin: 10px;
 }
-.produkt-kort > div:first-child {
+
+.produkt-kort>div:first-child {
   position: relative;
 }
+
 /* Nyheter icon på produkt bilden */
 .newstext {
   position: absolute;
@@ -100,25 +119,29 @@
   padding: 2px 6px;
   font-size: 13px;
 }
+
 .produkt-kort img {
   display: block;
-  position: relative; 
-  height: auto; 
+  position: relative;
+  height: auto;
 }
+
 .produkt-media img:first-child {
   width: 100%;
   display: block;
-  border: 1px solid black; 
+  border: 1px solid black;
 }
- .produkt-media img:nth-child(2) {
+
+.produkt-media img:nth-child(2) {
   position: absolute;
   width: 25px;
   bottom: 35px;
   left: 90%;
   max-width: 30px;
   z-index: 10;
- }
- .favorit-heart {
+}
+
+.favorit-heart {
   position: absolute;
   top: 300px;
   right: 10px;
@@ -126,47 +149,55 @@
   height: 22px;
   z-index: 10;
 }
-
 .produkt-namn {
   display: flex;
-  align-items: center; 
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.produkt-namn h5 {
+  display: flex;
   margin-left: 10px;
-  justify-content: space-between;
+   flex-direction: column;
+  justify-content: space-between; 
+
 }
-.produkt-namn h3 {
-   margin: 0px; 
-   font-size: 16px; 
-}
+
 .produkt-pris {
   display: flex;
-  /* margin-right: 100px; */
-  font-weight: bold;
+
 }
-.brand {
-  margin: 5px;
-  align-items: center; 
-  margin-left: 10px;
+.produkt-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   
 }
-/* Tar bara bort ramen runt heart iconen i bilden  */
-.produkt-kort .solidheart {
-  border: none !important;
+
+.brand {
+  margin: 5px; 
+  
+
 }
+
 .produkt-media {
   position: relative;
 }
+
 .små-iconer div {
   display: flex;
   align-items: center;
   gap: 10px;
   margin: 10px 0px;
   /* flex-direction: column; */
- 
+
 }
+
 .små-iconer img {
   width: 35px;
   height: 35px;
 }
+
 .botnavbar ul {
   list-style: none;
   padding: 0;
@@ -175,137 +206,153 @@
   text-decoration: none;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
-}
-.dropdown {
-  position: relative;
 
 }
-.dropdown-meny {
-  display: none;
-  position: absolute;
-  background: white;
-  border: 1px solid black;
-  padding: 5px 0;
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
 }
-.dropdown-menu li {
-  padding: 5px 10px;
+
+.accordion-header {
+  border-top: 1px solid black;
 }
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
+/* 
 @media (min-width: 640px) {
   .header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
   }
+
   .search-row {
     display: flex;
     align-items: center;
     width: 100%;
     /* margin-left: auto;
     margin-right: auto   */
-  }
+  
+/* 
   .search {
-      margin-left: 20px;
-    }
+    margin-left: 20px;
+  }
+
   .icons {
     margin-left: auto;
     display: flex;
     gap: 10px;
   }
+
   .navbar ul {
     display: flex;
     gap: 20px;
     list-style: none;
     padding: 0;
   }
-.hero-img {
-  display: grid;
-  grid-template-columns: auto;
-  align-items: center;
-  width: 100%;
-  height: auto;
+
+  .hero-img {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    width: 100%;
+    height: auto;
   }
-.hero-text {
-  display: block;
-}
-.hero img {
-  display: flex;
-  border: 1px solid black;
-  margin: 10px;
-  width: 90%;
-}
-.produkter {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+
+  .hero-text {
+    display: block;
+  }
+
+  .hero img {
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+    width: 90%;
+  }
+
+  .produkter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 
   }
-.produkt-kort img {
-  width: 100%;
-  height: auto;
-  border: 1px solid black;
-  margin: 10px;
+
+  .produkt-kort img {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    margin: 10px;
+  }
+
+  .produkt-namn {
+    display: flex;
+    align-items: center;
+  }
+
+  .produkt-namn h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .produkt-pris {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .levis-text {
+    display: flex;
+    font-size: 16px;
+  }
 }
-.produkt-namn {
-  display: flex;
-  align-items: center;
-}
-.produkt-namn h3 {
-  margin: 0;
-  font-size: 16px;
-}
-.produkt-pris {
-  margin: 0;
-  font-weight: bold;
-}
-.levis-text {
-  display: flex;
-  font-size: 16px;
-}
-}
- @media (min-width: 1024px) {
+
+@media (min-width: 1024px) {
   .header-logo {
     width: 100%;
     height: auto;
   }
+
   .hero {
-   display: flex;
-   flex-direction: row-reverse;
-   align-items: center;
-   gap: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
   }
+
   .hero-img,
   .hero-text {
     flex: 1;
   }
+
   .produkter {
     grid-template-columns: repeat(4, 1fr);
   }
-  .produkt-kort img {
-   width: 100%;
-   height: auto;
-   border: 1px solid black;
-   margin: 10px;
-}
-.produkt-namn {
-   display: flex;
-   align-items: center;
-}
-.produkt-namn h3 {
-  margin: 0;
-  font-size: 16px;
-}
-.produkt-pris {
-  margin: 0;
-  font-weight: bold;
 
-}
-.levis-text {
-  display: flex;
-  font-size: 16px;
-}
-}
+  .produkt-kort img {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    margin: 10px;
+  }
+
+  .produkt-namn {
+    display: flex;
+    align-items: center;
+  }
+
+  .produkt-namn h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .produkt-pris {
+    margin: 0;
+    font-weight: bold;
+
+  }
+
+  .levis-text {
+    display: flex;
+    font-size: 16px;
+  } */
+
 /* Produktsidans style */
