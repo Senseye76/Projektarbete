@@ -150,13 +150,40 @@
 
 /* Allt ovan är regler för Hero delen ^  */
 
+ .spots {
+  display: flex;
+  justify-content: space-evenly;
+}
+.spots .spot {
+  border: 1px solid black;
+  position: relative; 
+}
+.spottext {
+  position: absolute;
+  bottom: 25%;
+  right: 30%;
+  background-color: rgb(182, 180, 180);
+  color: rgb(0, 0, 0);
+  border-radius: 9px;
+  padding: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+.spots {
+  display: none;
+  border: 1px solid black
+}
+}
+
+
+
 .produkt-kort {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr;
   gap: 20px;
   padding: 10px;
-}
+} 
 
 @media (min-width: 640px) {
   .produkt-kort {
@@ -232,16 +259,14 @@
 .små-iconer-produktsida {
   display: grid;
   gap: 20px;
-  border: 1px solid black;
-  
-
+  margin-top: 3rem;
+ 
 }
 
 .små-iconer div,
 .små-iconer-produktsida div {
   display: flex;
   gap: 10px;
-  align-items: center;
 }
 
 .små-iconer img,
@@ -257,6 +282,19 @@
   .små-iconer,
   .små-iconer-produktsida {
     grid-template-columns: 1fr 1fr; 
+    padding-bottom: 20px;
+  }
+  .små-iconer div,
+  .små-iconer-produktsida div {
+  justify-content: center;
+}
+}
+ @media (min-width: 1024px) {
+  .små-iconer,
+  .små-iconer-produktsida {
+    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+    padding-bottom: 20px;
+
   }
 }
 
@@ -264,7 +302,6 @@
 
 .footer-links-desktop {
   display: none;
-   border: 1px solid black;
 }
 
 .footer-links-desktop h4 {
@@ -284,24 +321,34 @@
   .mobile-accordion {
     display: none;
   }
-
   .footer-links-desktop {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding: 20px 10px 0 10px;
-  }
+    justify-content: start;
 }
- /* Ovan är regler för footer längst ner på sidan för desktop */
-
-
+  .footer-links-desktop {
+  display: flex;
+  gap: 80px;
+}
+  .footer-links-desktop, footer {
+background-color: rgb(221, 218, 218);
+}
+}  
+/* Ovan är regler för footer längst ner på sidan för desktop */
 footer {
   display: grid;
   justify-content: center;
-  margin: 30px 0px
+  padding: 30px;
+ 
 }
 
 /* Allt ovan är regler för footer längst ner på sidan ^  */
+
+.produkt-detalj {
+  display: grid;
+}
 
 .produkt-detalj-bild {
   position: relative;
@@ -309,9 +356,10 @@ footer {
 
 .produkt-detalj-bild>img:first-child {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   border: 1px solid black;
+  object-fit: fill;
 }
 
 .produkt-detalj-heart {
@@ -324,6 +372,9 @@ footer {
 }
 
 .produkt-detalj-info button {
+  margin-bottom: 20px;
+}
+.produkt-detalj-info .produkt-pris {
   margin-bottom: 20px;
 }
 
@@ -344,5 +395,28 @@ footer {
   background-color: #333;
   transform: scale(1.02);
 }
+
+@media (min-width: 640px) {
+  .produkt-detalj {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+  .buy-btn {
+  width: 30%;
+
+}
+.produkt-detalj-bild {
+  position: relative;
+}
+.produkt-detalj-heart {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+}
+
 
 /* Allt ovan är regler för produkt-detalj+sidan ^  */
