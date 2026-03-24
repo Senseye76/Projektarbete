@@ -1,4 +1,314 @@
-/* Webbsidans style */
+.site-header {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.site-header .logo {
+  display: flex;
+}
+.logo img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.search-row {
+  display: flex;
+  gap: 8px;
+  padding-left: 10px;
+}
+ .search > input,
+ .search > button {
+  border-radius: 12px;
+}
+.search > input {
+  text-align: center;
+}
+ .search > button {
+  color: white;
+  background-color: rgb(77, 48, 48);
+ }
+ .search button:hover {
+  background-color: #db7171;
+}
+.navbar > ul {
+  list-style: none;
+  padding: 10px;
+}
+.navbar > ul a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.2s ease;
+}
+.navbar ul a:hover {
+  color: #db7171;
+}
+/* Allt ovan är regler för header delen ^  */
+
+
+
+.hero {
+  display: grid;
+  border: 1px solid black;
+}
+.hero-bild img {
+  width: 100%;
+  height: auto;
+  padding: 20px 10px 5px 10px; 
+  border-bottom:  1px solid black;
+}
+.hero-text {
+  display: grid;
+  justify-items: center;
+}
+/* Allt ovan är regler för Hero delen ^  */
+
+.produkt-kort {
+  display: grid;
+  gap: 20px;
+}
+.produkt-media {
+  position: relative;
+}
+.produkt-media a img  {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  margin: 10px 0px 0px 0px;  
+}
+.favorit-heart {
+  position: absolute;
+  top: 350px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+}
+.newstext {
+  position: absolute;
+  top: 20px;  
+  left: 10px;
+  background-color: black;
+  color: white;
+  font-size: 12px; 
+  padding: 8px;
+  border-radius: 9px; 
+}
+.produkt-namn {
+  display: flex;
+  justify-content: space-between;
+
+}
+.produkt-namn p {
+  font-weight: 700;
+}
+.brand {
+  font-size: 12px;
+}
+/* Allt ovan är regler för alla produkter delen ^  */
+
+.små-iconer,
+.små-iconer-produktsida {
+  display: grid;
+  gap: 20px;
+
+}
+.små-iconer div,
+.små-iconer-produktsida div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.små-iconer img,
+.små-iconer-produktsida img {
+  width: 35px;
+  height: 35px;
+}
+.små-iconer-produktsida {
+  margin-bottom: 20px;
+}
+/* Allt ovan är regler för små-iconer delen på botten av sidan ^  */
+
+footer {
+  display: grid;
+  justify-content: center;
+  margin: 30px 0px
+}
+/* Allt ovan är regler för fotter längst ner på sidan ^  */
+
+.produkt-detalj-bild {
+  position: relative;
+}
+
+.produkt-detalj-bild > img:first-child {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid black;
+}
+
+.produkt-detalj-heart {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+.produkt-detalj-info button {
+  margin-bottom: 20px;
+}
+
+ 
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* onödig kod just nu */
+/* Webbsidans style
 .header {
   display: grid;
   margin: 10px;
@@ -105,8 +415,7 @@
 .produkt-kort>div:first-child {
   position: relative;
 }
-
-/* Nyheter icon på produkt bilden */
+ Nyheter icon på produkt bilden 
 .newstext {
   position: absolute;
   top: 10px;
@@ -189,7 +498,7 @@
   align-items: center;
   gap: 10px;
   margin: 10px 0px;
-  /* flex-direction: column; */
+   flex-direction: column; 
 
 }
 
@@ -217,142 +526,4 @@ footer {
 
 .accordion-header {
   border-top: 1px solid black;
-}
-/* 
-@media (min-width: 640px) {
-  .header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-  }
-
-  .search-row {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    /* margin-left: auto;
-    margin-right: auto   */
-  
-/* 
-  .search {
-    margin-left: 20px;
-  }
-
-  .icons {
-    margin-left: auto;
-    display: flex;
-    gap: 10px;
-  }
-
-  .navbar ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-  }
-
-  .hero-img {
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    width: 100%;
-    height: auto;
-  }
-
-  .hero-text {
-    display: block;
-  }
-
-  .hero img {
-    display: flex;
-    border: 1px solid black;
-    margin: 10px;
-    width: 90%;
-  }
-
-  .produkter {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-
-  }
-
-  .produkt-kort img {
-    width: 100%;
-    height: auto;
-    border: 1px solid black;
-    margin: 10px;
-  }
-
-  .produkt-namn {
-    display: flex;
-    align-items: center;
-  }
-
-  .produkt-namn h3 {
-    margin: 0;
-    font-size: 16px;
-  }
-
-  .produkt-pris {
-    margin: 0;
-    font-weight: bold;
-  }
-
-  .levis-text {
-    display: flex;
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header-logo {
-    width: 100%;
-    height: auto;
-  }
-
-  .hero {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .hero-img,
-  .hero-text {
-    flex: 1;
-  }
-
-  .produkter {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .produkt-kort img {
-    width: 100%;
-    height: auto;
-    border: 1px solid black;
-    margin: 10px;
-  }
-
-  .produkt-namn {
-    display: flex;
-    align-items: center;
-  }
-
-  .produkt-namn h3 {
-    margin: 0;
-    font-size: 16px;
-  }
-
-  .produkt-pris {
-    margin: 0;
-    font-weight: bold;
-
-  }
-
-  .levis-text {
-    display: flex;
-    font-size: 16px;
-  } */
-
-/* Produktsidans style */
+}  */
