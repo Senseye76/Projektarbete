@@ -79,7 +79,7 @@ object-fit: cover;
 }
 .favorit-heart {
   position: absolute;
-  top: 350px;
+  bottom: 12px;/* top: 350px; */
   right: 20px;
   width: 30px;
   height: 30px;
@@ -150,7 +150,7 @@ footer {
 
 .produkt-detalj-heart {
   position: absolute;
-  top: 12px;
+  bottom: 12px;
   right: 12px;
   width: 24px;
   height: 24px;
@@ -158,6 +158,22 @@ footer {
 }
 .produkt-detalj-info button {
   margin-bottom: 20px;
+}
+.buy-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.buy-btn:hover {
+  background-color: #333;
+  transform: scale(1.02);
 }
 
  
