@@ -65,6 +65,7 @@
     gap: 10px;
     flex: 1;
   }
+
   .icons {
     display: flex;
     gap: 10px;
@@ -150,14 +151,16 @@
 
 /* Allt ovan är regler för Hero delen ^  */
 
- .spots {
+.spots {
   display: flex;
   justify-content: space-evenly;
 }
+
 .spots .spot {
   border: 1px solid black;
-  position: relative; 
+  position: relative;
 }
+
 .spottext {
   position: absolute;
   bottom: 25%;
@@ -169,10 +172,10 @@
 }
 
 @media (max-width: 1024px) {
-.spots {
-  display: none;
-  border: 1px solid black
-}
+  .spots {
+    display: none;
+    border: 1px solid black
+  }
 }
 
 .produkt-kort {
@@ -181,7 +184,7 @@
   grid-template-columns: 1fr;
   gap: 20px;
   padding: 10px;
-} 
+}
 
 @media (min-width: 640px) {
   .produkt-kort {
@@ -258,7 +261,7 @@
   display: grid;
   gap: 20px;
   margin-top: 3rem;
- 
+
 }
 
 .små-iconer div,
@@ -276,21 +279,26 @@
 .små-iconer-produktsida {
   margin-bottom: 20px;
 }
+
 @media (min-width: 640px) {
+
   .små-iconer,
   .små-iconer-produktsida {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     padding-bottom: 20px;
   }
+
   .små-iconer div,
   .små-iconer-produktsida div {
-  justify-content: center;
+    justify-content: center;
+  }
 }
-}
+
 @media (min-width: 1024px) {
+
   .små-iconer,
   .små-iconer-produktsida {
-    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-bottom: 20px;
 
   }
@@ -319,26 +327,31 @@
   .mobile-accordion {
     display: none;
   }
+
   .footer-links-desktop {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding: 20px 10px 0 10px;
     justify-content: start;
-}
+  }
+
   .footer-links-desktop {
-  display: flex;
-  gap: 80px;
+    display: flex;
+    gap: 80px;
+  }
+
+  .footer-links-desktop,
+  footer {
+    background-color: rgb(221, 218, 218);
+  }
 }
-  .footer-links-desktop, footer {
-background-color: rgb(221, 218, 218);
-}
-}  
+
 /* Ovan är regler för footer längst ner på sidan för desktop */
 footer {
   display: grid;
   justify-content: center;
   padding: 30px;
- 
+
 }
 
 /* Allt ovan är regler för footer längst ner på sidan ^  */
@@ -371,6 +384,7 @@ footer {
 .produkt-detalj-info button {
   margin-bottom: 20px;
 }
+
 .produkt-detalj-info .produkt-pris {
   margin-bottom: 20px;
 }
@@ -396,43 +410,52 @@ footer {
 @media (min-width: 640px) {
   .produkt-detalj {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
   }
-  .buy-btn {
-  width: 30%;
 
+  .buy-btn {
+    width: 30%;
+
+  }
+
+  .produkt-detalj-bild {
+    position: relative;
+  }
+
+  .produkt-detalj-heart {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    border: none;
+  }
 }
-.produkt-detalj-bild {
-  position: relative;
-}
-.produkt-detalj-heart {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  width: 24px;
-  height: 24px;
-  border: none;
-}
-}
+
 /* Allt ovan är regler för produkt-detalj+sidan ^  */
 
 .liknande-produkter {
   display: none;
   padding: 20px 10px;
 }
+
 .liknande-produkter h2 {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .slider-viewport {
   overflow: hidden;
   width: 100%;
 }
+
 .slider-track {
-  display: flex; /* 🔥 viktigt */
+  display: flex;
+  /* 🔥 viktigt */
   gap: 16px;
   transition: transform 0.3s ease;
 }
+
 .slider-item {
   /* flex: 0 0 calc((90% - 32px) / 3);   */
   flex: 0 0 calc((100% - 32px) / 3);
@@ -441,26 +464,32 @@ footer {
   align-items: center;
   /* justify-content: space-around; */
 }
+
 .slider-info {
   display: flex;
   justify-content: space-between;
   width: 200px;
   margin-top: 10px;
 }
+
 .slider-info p {
   margin: 0;
 }
+
 .slider-item .brand {
   width: 200px;
   margin-top: 6px;
   font-size: 12px;
 }
+
 .slider-viewport {
   overflow-x: auto;
 }
+
 .slider-wrapper {
   position: relative;
 }
+
 .slider-knapp {
   position: absolute;
   top: 50%;
@@ -470,22 +499,27 @@ footer {
   cursor: pointer;
   z-index: 2;
 }
+
 .slider-knapp.prev {
   left: -9px;
 }
+
 .slider-knapp.next {
   right: -9px;
 }
+
 @media (min-width: 1024px) {
   .liknande-produkter {
     display: block;
   }
 }
+
 .top-admin {
   border: 1px solid black;
   background-color: rgb(22, 21, 21);
   color: white;
 }
+
 .top-admin h2 {
   padding-left: 20px;
 }
@@ -495,30 +529,35 @@ footer {
   grid-template-columns: 1fr 3fr;
   border: 1px solid black;
   gap: 1px;
-  height: 100vh; 
+  height: 100vh;
 }
+
 .admin-produkt {
   border: 1px solid black;
   background-color: rgb(177, 177, 177);
 }
+
 .admin-produkt p {
-  margin-left: 50px; 
-  
+  margin-left: 50px;
+
 }
+
 .admin-ny-produkt h3 {
-  padding-left: 50px; 
+  padding-left: 50px;
 }
+
 .admin-ny-produkt {
-   padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .form-info {
   display: grid;
   justify-content: space-between;
   gap: 20px;
-  max-width: 400px; 
- 
+  max-width: 400px;
+
 }
+
 .checkboxes {
   display: flex;
   flex-direction: column;
@@ -531,37 +570,178 @@ footer {
   border: 1px solid black;
   cursor: pointer;
 }
+
 .admin-grid-add {
   display: grid;
-   grid-template-columns: 1fr 3fr;
-   height: 100vh;
-   
- }
+  grid-template-columns: 1fr 3fr;
+  height: 100vh;
+
+}
+
 .admin-produkt-add {
   border: 1px solid black;
   background-color: rgb(177, 177, 177);
   padding-left: 30%;
 }
+
 .admin-list {
   border: 1px solid black;
   justify-content: space-between;
   padding-top: 15px;
 }
+
 .produkt-listan {
-  width: 100%; 
+  width: 100%;
   border-collapse: collapse;
 }
+
 .produkt-listan th,
 .produkt-listan td {
   border: 1px solid black;
   padding: 8px;
   text-align: left;
 }
+
 .produkt-listan th {
   background-color: #ddd;
 }
+
 .p-title-btn {
- display: flex;
-justify-content: space-between;
-margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
+ 
+.kassa h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kassa-listan {
+  width: 100%;
+}
+
+.kassa-listan th,
+.kassa-listan td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+.kassa-listan th {
+  background-color: #ddd;
+}
+@media (max-width: 640px) {
+  .kassa  {
+    display: none;
+  }
+}
+  /* Allt ovan är for kassa ^ */
+ .kunduppgifter {
+  max-width: 420px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid black;
+  
+}
+
+.kunduppgifter h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout-form label {
+  font-weight: 500;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+  box-sizing: border-box; 
+}
+
+.adress-box {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.adress-box legend {
+  padding: 0 6px;
+  font-weight: 500;
+}
+
+.checkbox-rad {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kop-btn {
+  width: 160px;
+  margin: 20px auto 0;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #d9d9d9;
+  font-size: 28px;
+  cursor: pointer;
+}
+/* Allt ovan är för kunduppgifter ^ */
+
+.order-lista {
+  max-width: 420px;
+  margin: 20px auto;
+}
+
+.order-lista h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.order-box {
+  border: 1px solid black;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.order-item:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.order-item p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.order-item span {
+  font-size: 12px;
+  color: gray;
+}
+
+.order-item strong {
+  font-size: 16px;
+} 
+@media (min-width: 1024px) {
+  .checkout-form {
+    display: none;
+  }
+}
+ /* Allt ovan är för kassa i 640px ^ */
