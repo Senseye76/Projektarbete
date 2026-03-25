@@ -540,6 +540,7 @@ footer {
 .admin-produkt-add {
   border: 1px solid black;
   background-color: rgb(177, 177, 177);
+  padding-left: 30%;
 }
 .admin-list {
   border: 1px solid black;
@@ -547,7 +548,7 @@ footer {
   padding-top: 15px;
 }
 .produkt-listan {
-  width: 100%;
+  width: 100%; 
   border-collapse: collapse;
 }
 .produkt-listan th,
@@ -558,4 +559,9 @@ footer {
 }
 .produkt-listan th {
   background-color: #ddd;
+}
+.p-title-btn {
+ display: flex;
+justify-content: space-between;
+margin: 20px;
 }
