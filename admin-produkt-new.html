@@ -10,24 +10,62 @@
 </head>
 
 <body>
-    <section class="top-admin">
-        <article>
-            <h2>Administration</h2>
-        </article>
+    <header>
+        <section class="top-admin">
+            <article>
+                <h2>Administration</h2>
+            </article>
 
-    </section>
+        </section>
+    </header>
 
-    <section class="admin-produkt">
-        <article>
-            <h3>dfogjkdfpgo</h3>
-        </article>
 
-    </section>
 
-    <section class="admin-ny-produkt">
-        <article>
 
-        </article>
+    <section class="admin-grid">
+        <div class="admin-produkt">
+            <p>Produkter</p>
+        </div>
+
+
+        <form class="admin-ny-produkt">
+            <h3>Ny Produkt</h3>
+            <div class="form-info">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Ange namn" required>
+
+                <label for="beskrivning">Beskrivning</label>
+                <textarea type="text" placeholder="Ange beskrivning" maxlength="50" required></textarea>
+
+                <label for="bild">Bild</label>
+                <input type="file" accept=".png, .jpg, .jpeg">
+
+                
+                <label for="sku">SKU</label>
+                <input type="text" placeholder="Ange SKU" required>
+
+              
+                <label for="pris">Pris</label>
+                <input type="number" placeholder="Ange pris" required>
+
+                <label for="datum">Publiceringsdatum</label>
+                <input type="date">
+
+              
+                <label>Kategorier</label>
+                <div class="checkboxes">
+                    <label><input type="checkbox"> T-Shirts</label>
+                    <label><input type="checkbox"> Sommar</label>
+                    <label><input type="checkbox"> Byxor</label>
+                    <label><input type="checkbox"> Skor</label>
+                </div>
+
+               
+                <button class="add-btn" type="submit">Lägg till</button>
+
+
+            </div>
+        </form>
 
     </section>
 </body>

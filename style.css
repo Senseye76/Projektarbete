@@ -489,6 +489,73 @@ footer {
 .top-admin h2 {
   padding-left: 20px;
 }
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border: 1px solid black;
+  gap: 1px;
+  height: 100vh; 
+}
+.admin-produkt {
+  border: 1px solid black;
+  background-color: rgb(177, 177, 177);
+}
+.admin-produkt p {
+  margin-left: 50px; 
+  
+}
+.admin-ny-produkt h3 {
+  padding-left: 50px; 
+}
 .admin-ny-produkt {
-  background-color: #cec7c7;
+   padding-left: 1rem;
+}
+
+.form-info {
+  display: grid;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 400px; 
+ 
+}
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.add-btn {
+  padding: 10px;
+  background: lightgray;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.admin-grid-add {
+  display: grid;
+   grid-template-columns: 1fr 3fr;
+   height: 100vh;
+   
+ }
+.admin-produkt-add {
+  border: 1px solid black;
+  background-color: rgb(177, 177, 177);
+}
+.admin-list {
+  border: 1px solid black;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.produkt-listan {
+  width: 100%;
+  border-collapse: collapse;
+}
+.produkt-listan th,
+.produkt-listan td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+.produkt-listan th {
+  background-color: #ddd;
 }
