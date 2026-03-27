@@ -611,14 +611,144 @@ footer {
   justify-content: space-between;
   margin: 20px;
 }
- 
-.kassa h2 {
+/* Allt ovan är för produktlistan på adminsidan  */
+
+
+.order-listan-mobil {
+ display: grid;
+ margin: 10px;
+  
+}
+.order-listan-mobil h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+}
+.order-item div {
+  display: flex;
+  justify-content: space-between;
+}
+.order-box .order-item {
+ border: 1px solid black; 
+}
+.kunduppgifter h2 {
+  text-align: center;
+  margin-top: 1rem;
+}
+.kunduppgifter {
+  margin: 25px; 
+}
+.checkout-form { 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.checkout-form input[type="text"],
+.checkout-form input[type="email"] {
+  width: 100%; 
+  padding: 8px;
+  border:  1px solid black;  
+}
+.checkout-form label {
+  font-weight: 500;
+  padding-left: 2px;
+}
+.adress-box {
+ border: 1px solid black;
+ padding: 10px; 
+}
+.adress-box legend {
+  font-weight: 500;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.small-field {
+  width: 150px;
+}
+.kop-btn {
+  width: 160px;
+  margin: 20px auto 0;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #d9d9d9;
+  font-size: 28px;
+  cursor: pointer;
+}
+.checkbox-rad { 
+  gap: 8px; 
+  margin-top: 10px; 
+}
+@media (min-width: 640px) {
+  .order-listan-mobil  {
+    display: none;
+  }
+}
+.kassa-desktop {
+  display: none;
+}
+@media (min-width: 640px) {
+  .kassa-desktop {
+    display: block;
+  }
+  .kassa-desktop h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.kassa-listan-desktop {
+  width: 100%;
+  
+}
+.kassa-listan-desktop th,
+.kassa-listan-desktop td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+.kassa-listan-desktop th {
+  background-color: #ddd;
+}
+.t-kund {
+  margin: 20px;
+  padding-bottom: 20px;
+}
+.kunduppgifter-desktop {
+  display: flex;
+  flex-direction: column;
+}
+.field-desktop-Frn-Etn {
+  display: grid;
+  border: 1px solid black; 
+}
 }
 
-.kassa-listan {
-  width: 100%;
+
+/* Allt ovan är kassa och kundeuppgifter i mobil lägge */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Allt ovan är kassa och kundeuppgifter i desktop lägge */
+ 
+ /* .kassa h2 {
+  text-align: center;
+  margin-bottom: 20px;
+} 
+
+.kassa-listan  {
+  width: 100%; 
+   display: none;
 }
 
 .kassa-listan th,
@@ -630,12 +760,7 @@ footer {
 .kassa-listan th {
   background-color: #ddd;
 }
-@media (max-width: 640px) {
-  .kassa  {
-    display: none;
-  }
-}
-  /* Allt ovan är for kassa ^ */
+  /* Allt ovan är for kassa 
  .kunduppgifter {
   max-width: 420px;
   margin: 20px auto;
@@ -699,20 +824,21 @@ footer {
   font-size: 28px;
   cursor: pointer;
 }
-/* Allt ovan är för kunduppgifter ^ */
+/* Allt ovan är för kunduppgifter ^ 
 
 .order-lista {
-  max-width: 420px;
-  margin: 20px auto;
+  max-width: 420px; 
+  margin: 20px auto; 
 }
 
 .order-lista h2 {
   text-align: center;
   margin-bottom: 15px;
+  
 }
 
 .order-box {
-  border: 1px solid black;
+  border: 1px solid black; 
 }
 
 .order-item {
@@ -739,9 +865,14 @@ footer {
 .order-item strong {
   font-size: 16px;
 } 
-@media (min-width: 1024px) {
-  .checkout-form {
-    display: none;
-  }
+ @media (min-width: 640px) {
+ .order-lista {
+  display: none;
+ }
+ .kassa h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  display: none;
 }
- /* Allt ovan är för kassa i 640px ^ */
+}  
+  Allt ovan är för kassa i 640px ^ */

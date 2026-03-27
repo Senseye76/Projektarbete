@@ -41,11 +41,85 @@
         </nav>
     </header>
 
-    <section class="kassa">
+    <section class="order-listan-mobil">
+        <h2>Kassan</h2>
+
+        <section class="checkout-mobil">
+            <div class="order-box">
+                <div class="order-item">
+                    <div>
+                        <p>1 x Svart T-Shirt</p>
+                        <strong>199 SEK</strong>
+                    </div>
+                    <span>199 SEK</span>
+                </div>
+
+                <div class="order-item">
+                    <div>
+                        <p>2 x Vit T-Shirt</p>
+                        <strong>398 SEK</strong>
+                    </div>
+                    <span>199 SEK</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="kunduppgifter">
+            <h2>Kunduppgifter</h2>
+
+            <form class="checkout-form">
+
+                <div class="field">
+                    <label for="fornamn">Förnamn</label>
+                    <input type="text" id="fornamn" name="fornamn">
+
+
+                    <div class="field">
+                        <label for="efternamn">Efternamn</label>
+                        <input type="text" id="efternamn" name="efternamn">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="epost">E-post</label>
+                    <input type="email" id="epost" name="epost">
+                </div>
+
+                <fieldset class="adress-box">
+                    <legend>Adress</legend>
+
+                    <div class="field">
+                        <label for="gata">Gata</label>
+                        <input type="text" id="gata" name="gata">
+                    </div>
+
+                    <div class="small-field">
+                        <label for="postnummer">Postnummer</label>
+                        <input type="text" id="postnummer" name="postnummer">
+                    </div>
+
+                    <div class="field">
+                        <label for="stad">Stad</label>
+                        <input type="text" id="stad" name="stad">
+                    </div>
+                </fieldset>
+
+                <label class="checkbox-rad">
+                    <input type="checkbox" name="nyhetsbrev">
+                    Jag vill ta emot nyhetsbrev
+                </label>
+
+                <button type="submit" class="kop-btn">Köp</button>
+            </form>
+        </section>
+    </section>
+
+
+
+    <section class="kassa-desktop">
         <h2>Kassa</h2>
 
-
-        <table class="kassa-listan">
+        <table class="kassa-listan-desktop">
             <thead>
                 <tr>
                     <th>Produkt</th>
@@ -71,80 +145,55 @@
                 </tr>
             </tbody>
         </table>
-    </section>
 
-    <section class="order-lista">
-        <h2>Kassa</h2>
-        <div >
-            <div class="order-item">
-                <div>
-                    <p>1 x Svart T-Shirt</p>
-                    <span>199 SEK</span>
-                </div>
-                <strong>199 SEK</strong>
-            </div>
+        <section class="kunduppgifter-desktop">
+            <h3 class="t-kund">Kunduppgifter</h3>
 
-            <div class="order-item">
-                <div>
-                    <p>2 x Vit T-Shirt</p>
-                    <span>199 SEK</span>
-                </div>
-                <strong>398 SEK</strong>
-            </div>
+            <form class="checkout-form-desktop">
 
-        </div>
-    </section>
-
-
-
-
-    <section class="kunduppgifter">
-        <h2>Kunduppgifter</h2>
-        
-        <form class="checkout-form">
-            <div class="row">
-                <div class="field">
+                <div class="field-desktop-Frn-Etn">
                     <label for="fornamn">Förnamn</label>
                     <input type="text" id="fornamn" name="fornamn">
+
+
+                    <div class="field-desktop">
+                        <label for="efternamn">Efternamn</label>
+                        <input type="text" id="efternamn" name="efternamn">
+                    </div>
                 </div>
 
                 <div class="field">
-                    <label for="efternamn">Efternamn</label>
-                    <input type="text" id="efternamn" name="efternamn">
-                </div>
-            </div>
-
-            <div class="field">
-                <label for="epost">E-post</label>
-                <input type="email" id="epost" name="epost">
-            </div>
-
-            <fieldset class="adress-box">
-                <legend>Adress</legend>
-
-                <div class="field">
-                    <label for="gata">Gata</label>
-                    <input type="text" id="gata" name="gata">
+                    <label for="epost">E-post</label>
+                    <input type="email" id="epost" name="epost">
                 </div>
 
-                <div class="field small-field">
-                    <label for="postnummer">Postnummer</label>
-                    <input type="text" id="postnummer" name="postnummer">
-                </div>
+                <fieldset class="adress-box">
+                    <legend>Adress</legend>
 
-                <div class="field">
-                    <label for="stad">Stad</label>
-                    <input type="text" id="stad" name="stad">
-                </div>
-            </fieldset>
+                    <div class="field">
+                        <label for="gata">Gata</label>
+                        <input type="text" id="gata" name="gata">
+                    </div>
 
-            <label class="checkbox-rad">
-                <input type="checkbox" name="nyhetsbrev">
-                Jag vill ta emot nyhetsbrev
-            </label>
+                    <div class="field small-field">
+                        <label for="postnummer">Postnummer</label>
+                        <input type="text" id="postnummer" name="postnummer">
+                    </div>
 
-            <button type="submit" class="kop-btn">Köp</button>
-        </form>
+                    <div class="field">
+                        <label for="stad">Stad</label>
+                        <input type="text" id="stad" name="stad">
+                    </div>
+                </fieldset>
+
+                <label class="checkbox-rad">
+                    <input type="checkbox" name="nyhetsbrev">
+                    Jag vill ta emot nyhetsbrev
+                </label>
+
+                <button type="submit" class="kop-btn">Köp</button>
+            </form>
+        </section>
     </section>
 
 
