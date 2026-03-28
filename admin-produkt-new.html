@@ -32,26 +32,27 @@
             <h3>Ny Produkt</h3>
             <div class="form-info">
                 <label for="name">Name</label>
-                <input type="text" placeholder="Ange namn" required>
+                <input type="text" placeholder="Ange namn" maxlength="50" required>
 
                 <label for="beskrivning">Beskrivning</label>
-                <textarea type="text" placeholder="Ange beskrivning" maxlength="50" required></textarea>
+                <textarea type="text" placeholder="Ange beskrivning" maxlength="200"></textarea>
 
                 <label for="bild">Bild</label>
-                <input type="file" accept=".png, .jpg, .jpeg">
+                <input type="file" accept=".png, .jpg, .jpeg" required>
 
-                
+
                 <label for="sku">SKU</label>
-                <input type="text" placeholder="Ange SKU" required>
+                <input type="text" id="sku" name="sku" placeholder="Ange SKU" pattern="[A-Za-z]{3}[0-9]{2}"
+                    title="SKU måste vara 3 bokstäver följt av 2 siffror (t.ex. AAA11)" required>
 
-              
+
                 <label for="pris">Pris</label>
                 <input type="number" placeholder="Ange pris" required>
 
                 <label for="datum">Publiceringsdatum</label>
                 <input type="date">
 
-              
+
                 <label>Kategorier</label>
                 <div class="checkboxes">
                     <label><input type="checkbox"> T-Shirts</label>
@@ -60,7 +61,7 @@
                     <label><input type="checkbox"> Skor</label>
                 </div>
 
-               
+
                 <button class="add-btn" type="submit">Lägg till</button>
 
 
