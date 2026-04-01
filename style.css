@@ -254,7 +254,7 @@
   font-size: 12px;
 }
 
-/* Allt ovan är regler för alla produkter delen ^  */
+/* Allt ovan är regler för alla produkterkort delen ^  */
 
 .små-iconer,
 .små-iconer-produktsida {
@@ -512,6 +512,7 @@ footer {
     display: block;
   }
 }
+/* Allt ovan är regler för Slidern på produktsidan ^  */
 
 .top-admin {
   border: 1px solid black;
